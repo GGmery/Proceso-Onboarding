@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.example.app.LoginFragment"
+        android:name="es.iesagora.procesoonboarding.fragments.LoginFragment"
         android:label="Login">
         <action
             android:id="@+id/action_loginFragment_to_contactDataFragment"
@@ -15,7 +15,7 @@
 
     <fragment
         android:id="@+id/contactDataFragment"
-        android:name="com.example.app.ContactDataFragment"
+        android:name="es.iesagora.procesoonboarding.fragments.ContactDataFragment"
         android:label="Datos de contacto">
         <action
             android:id="@+id/action_contactDataFragment_to_sportsSelectionFragment"
@@ -37,5 +37,9 @@
     <fragment
         android:id="@+id/summaryFragment"
         android:name="com.example.app.SummaryFragment"
-        android:label="Resumen" />
+        android:label="Resumen" >
+        <action
+            android:id="@+id/action_summaryFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
 </navigation>

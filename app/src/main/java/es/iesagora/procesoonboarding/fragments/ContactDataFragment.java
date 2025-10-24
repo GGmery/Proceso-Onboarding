@@ -1,4 +1,4 @@
-package es.iesagora.procesoonboarding;
+package es.iesagora.procesoonboarding.fragments;
 
 import android.app.DatePickerDialog;
 import android.os.Bundle;
@@ -16,6 +16,8 @@ import androidx.navigation.Navigation;
 
 import java.util.Calendar;
 
+import es.iesagora.procesoonboarding.R;
+import es.iesagora.procesoonboarding.SharedViewModel;
 import es.iesagora.procesoonboarding.databinding.FragmentContactDataBinding;
 
 /**
