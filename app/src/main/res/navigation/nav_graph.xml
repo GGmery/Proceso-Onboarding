@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.app.LoginFragment"
+        android:label="Login">
+        <action
+            android:id="@+id/action_loginFragment_to_contactDataFragment"
+            app:destination="@id/contactDataFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/contactDataFragment"
+        android:name="com.example.app.ContactDataFragment"
+        android:label="Datos de contacto">
+        <action
+            android:id="@+id/action_contactDataFragment_to_sportsSelectionFragment"
+            app:destination="@id/sportsSelectionFragment" />
+        <action
+            android:id="@+id/action_contactDataFragment_to_summaryFragment"
+            app:destination="@id/summaryFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/sportsSelectionFragment"
+        android:name="com.example.app.SportsSelectionFragment"
+        android:label="Deportes">
+        <action
+            android:id="@+id/action_sportsSelectionFragment_to_summaryFragment"
+            app:destination="@id/summaryFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/summaryFragment"
+        android:name="com.example.app.SummaryFragment"
+        android:label="Resumen" />
+</navigation>
